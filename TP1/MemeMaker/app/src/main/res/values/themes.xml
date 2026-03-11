@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MemeMaker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- We will configure the color palette later -->
+    </style>
+
+    <style name="Theme.MemeMaker" parent="Base.Theme.MemeMaker" />
+</resources>

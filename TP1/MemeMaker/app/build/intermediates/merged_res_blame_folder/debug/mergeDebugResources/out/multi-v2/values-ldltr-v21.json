@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.mememaker.app-mergeDebugResources-47:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dylan\\.gradle\\caches\\8.12.1\\transforms\\bae1732dbf0a5cd4f5b2b2aab81357ff\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

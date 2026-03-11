@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.mememaker.app.ui.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editorFragment"
+        android:name="com.mememaker.app.ui.editor.EditorFragment"
+        android:label="Editor"
+        tools:layout="@layout/fragment_editor">
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

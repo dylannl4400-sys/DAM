@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meme Maker</string>
+    <style name="Base.Theme.MemeMaker" parent="Theme.Material3.DayNight.NoActionBar">
+        
+    </style>
+    <style name="Theme.MemeMaker" parent="Base.Theme.MemeMaker"/>
+</resources>

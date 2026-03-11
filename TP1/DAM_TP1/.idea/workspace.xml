@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21503a16-283c-4702-9232-c647deb9da14" name="Changes" comment="exercício 2.1, 2.2, 2.3, 6.1, 6.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Script" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dylannl4400-sys&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dylannl4400-sys/DAM_TP1ex2.git&quot;,
+    &quot;accountId&quot;: &quot;55a8ab4d-e642-4035-bdc5-6d70d39daf8a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3A7HxysUTAXxZsyuhROkdwVEK3J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Kotlin.Exer_1Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Exer_2Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Exer_3Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Exer_6Kt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dylan/DAM/DAM_TP1/src/main/kotlin/Main.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dylan\DAM\DAM_TP1\src\main\kotlin" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="org.example.dam.virtual_library" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Exer_6Kt">
+    <configuration name="Exer_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dam.exer_1.Exer_1Kt" />
+      <module name="DAM_TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exer_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dam.exer_2.Exer_2Kt" />
+      <module name="DAM_TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exer_3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.dam.exer_3.Exer_3Kt" />
+      <module name="DAM_TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exer_6Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.dam.virtual_library.Exer_6Kt" />
+      <module name="DAM_TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MainKt" />
+      <module name="DAM_TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Exer_6Kt" />
+        <item itemvalue="Kotlin.Exer_3Kt" />
+        <item itemvalue="Kotlin.Exer_2Kt" />
+        <item itemvalue="Kotlin.Exer_1Kt" />
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21503a16-283c-4702-9232-c647deb9da14" name="Changes" comment="" />
+      <created>1771936939378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771936939378</updated>
+      <workItem from="1771936940507" duration="713000" />
+      <workItem from="1771961212007" duration="4389000" />
+      <workItem from="1772013761133" duration="4112000" />
+      <workItem from="1772561776026" duration="12213000" />
+      <workItem from="1772628059505" duration="16000" />
+      <workItem from="1772652313549" duration="11726000" />
+      <workItem from="1772824163411" duration="20944000" />
+      <workItem from="1773146118125" duration="681000" />
+    </task>
+    <task id="LOCAL-00001" summary="dylan">
+      <option name="closed" value="true" />
+      <created>1771962338326</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771962338326</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initialize project structure with Kotlin and Maven configuration">
+      <option name="closed" value="true" />
+      <created>1772719331337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772719331337</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initialize project structure with Kotlin and Maven configuration, exercicio 2.1, 2.2">
+      <option name="closed" value="true" />
+      <created>1772725419155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772725419155</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initialize project structure with Kotlin and Maven configuration, exercicio 2.1, 2.2, 2.3">
+      <option name="closed" value="true" />
+      <created>1772728969408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772728969408</updated>
+    </task>
+    <task id="LOCAL-00005" summary="exercício 2.1, 2.2, 2.3, 6.1">
+      <option name="closed" value="true" />
+      <created>1772913183147</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772913183147</updated>
+    </task>
+    <task id="LOCAL-00006" summary="exercício 2.1, 2.2, 2.3, 6.1, 6.2">
+      <option name="closed" value="true" />
+      <created>1772917576977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1772917576977</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dylan" />
+    <MESSAGE value="initialize project structure with Kotlin and Maven configuration" />
+    <MESSAGE value="initialize project structure with Kotlin and Maven configuration, exercicio 2.1, 2.2" />
+    <MESSAGE value="initialize project structure with Kotlin and Maven configuration, exercicio 2.1, 2.2, 2.3" />
+    <MESSAGE value="exercício 2.1, 2.2, 2.3, 6.1" />
+    <MESSAGE value="exercício 2.1, 2.2, 2.3, 6.1, 6.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercício 2.1, 2.2, 2.3, 6.1, 6.2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

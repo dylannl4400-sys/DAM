@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.mememaker.app-merged_res-49:/layout_item_meme.xml.flat",
+        "source": "com.mememaker.app-main-51:/layout/item_meme.xml"
+    },
+    {
+        "merged": "com.mememaker.app-merged_res-49:/layout_fragment_gallery.xml.flat",
+        "source": "com.mememaker.app-main-51:/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "com.mememaker.app-merged_res-49:/layout_fragment_editor.xml.flat",
+        "source": "com.mememaker.app-main-51:/layout/fragment_editor.xml"
+    },
+    {
+        "merged": "com.mememaker.app-merged_res-49:/layout_activity_main.xml.flat",
+        "source": "com.mememaker.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.mememaker.app-merged_res-49:/navigation_nav_graph.xml.flat",
+        "source": "com.mememaker.app-main-51:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.mememaker.app-merged_res-49:/xml_file_paths.xml.flat",
+        "source": "com.mememaker.app-main-51:/xml/file_paths.xml"
+    }
+]

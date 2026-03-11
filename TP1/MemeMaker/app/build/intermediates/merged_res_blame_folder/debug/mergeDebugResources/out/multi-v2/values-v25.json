@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.mememaker.app-mergeDebugResources-47:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dylan\\.gradle\\caches\\8.12.1\\transforms\\bae1732dbf0a5cd4f5b2b2aab81357ff\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}
