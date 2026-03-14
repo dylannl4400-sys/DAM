@@ -1,6 +1,6 @@
 # Assignment 1 — Tutorial 1 - Hello World
 **Course:** LEIM
-**Student(s):** Dylan  
+**Student(s):** Dylan Loyola (a51609) 
 **Date:** 14 de Março de 2026  
 
 ## 1. Introduction
