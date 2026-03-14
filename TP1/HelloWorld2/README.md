@@ -1,8 +1,7 @@
 # Assignment 4 — Building Your First Android App
-Course: Desenvolvimento de Aplicações Móveis (DAM)  
-Student: Dylan (a51609)  
+Course: LEIM 
+Student: Dylan Loyola (a51609)  
 Date: 8 de Março de 2026  
-Repository URL: [Inserir URL do Repositório aqui]
 
 ## 1. Introduction
 Este trabalho teve como objetivo o desenvolvimento da primeira aplicação nativa Android, focando-se na familiarização com o ambiente de desenvolvimento Android Studio, a linguagem Kotlin e o sistema de gestão de recursos e layouts do Android. O exercício foi dividido em duas fases principais: a criação de uma aplicação "Hello World" básica (v1) e a sua posterior expansão para uma interface mais rica e complexa (v2).
