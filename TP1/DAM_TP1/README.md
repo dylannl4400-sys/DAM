@@ -1,8 +1,8 @@
 # Assignment 1 — Getting Started with Kotlin
-Course: Desenvolvimento de Aplicações Móveis (DAM)
-Student(s): [O teu Nome Aqui]
+Course: LEIM
+Student: Dylan Loyola (a51609)
 Date: 8 de Março de 2026
-Repository URL: [O Teu link do Git aqui]
+
 
 ## 1. Introduction
 Este trabalho prático marca o início da exploração da linguagem Kotlin no contexto do desenvolvimento de aplicações móveis. O objetivo principal foi familiarizar-me com a sintaxe básica, tipos de dados, estruturas de controlo e os princípios fundamentais da Programação Orientada a Objetos (POO) em Kotlin, utilizando o IntelliJ IDEA e o Maven como ferramentas de suporte.
