@@ -1,7 +1,7 @@
 # Assignment 1 — Tutorial 1 - Hello World
 **Course:** LEIM
 **Student(s):** Dylan  
-**Date:** Março 2026  
+**Date:** 14 de Março de 2026  
 
 ## 1. Introduction
 Este projeto surge no âmbito do exercício **"5.3 Building a System Info App"**. O objetivo principal delineado no enunciado consistia em criar uma nova aplicação capaz de extrair propriedades do sistema e apresentar as informações acerca do hardware utilizado e *build* do dispositivo num *MultiLine Text Widget*. Tudo isto tendo como premissa o uso exclusivo do objeto nativo `android.os.Build` do sistema operativo.
