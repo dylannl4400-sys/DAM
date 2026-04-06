@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50108b77-c6f4-4b2e-ad77-81bdb1e0eb00" name="Changes" comment="Primeiro commit do TP2 de DAM" />
+    <list default="true" id="50108b77-c6f4-4b2e-ad77-81bdb1e0eb00" name="Changes" comment="Primeiro commit do TP2 de DAM">
+      <change beforePath="$PROJECT_DIR$/../CoolWeatherAPP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoolWeatherAPP/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoolWeatherAPP/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoolWeatherAPP/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1774106255755</updated>
       <workItem from="1774106256852" duration="13006000" />
-      <workItem from="1774372661728" duration="1189000" />
+      <workItem from="1774372661728" duration="1896000" />
+      <workItem from="1774957140427" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro commit do TP2 de DAM">
       <option name="closed" value="true" />
