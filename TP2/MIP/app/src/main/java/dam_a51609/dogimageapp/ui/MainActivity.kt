@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val adapter = DogImageAdapter()
+    private lateinit var adapter: DogImageAdapter
 
     // Simple manual dependency injection
     private val apiService by lazy {
@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupAdapter()
         setupRecyclerView()
         setupObservers()
         setupListeners()
@@ -45,6 +46,21 @@ class MainActivity : AppCompatActivity() {
         if (viewModel.dogImages.value.isNullOrEmpty()) {
             viewModel.fetchRandomDogImage()
         }
+    }
+
+    private fun setupAdapter() {
+        adapter = DogImageAdapter(
+            onItemClick = { item ->
+                val intent = android.content.Intent(this, DetailsActivity::class.java).apply {
+                    putExtra(DetailsActivity.EXTRA_IMAGE_URL, item.url)
+                    putExtra(DetailsActivity.EXTRA_BREED, item.breed)
+                }
+                startActivity(intent)
+            },
+            onFavoriteClick = { item ->
+                viewModel.toggleFavorite(item)
+            }
+        )
     }
 
     private fun setupRecyclerView() {

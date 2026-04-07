@@ -4,7 +4,9 @@ package dam_a51609.dogimageapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,11 +22,20 @@ public final class ItemDogImageBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final ImageButton btnFavorite;
+
+  @NonNull
   public final ImageView ivDogImage;
 
-  private ItemDogImageBinding(@NonNull MaterialCardView rootView, @NonNull ImageView ivDogImage) {
+  @NonNull
+  public final TextView tvBreed;
+
+  private ItemDogImageBinding(@NonNull MaterialCardView rootView, @NonNull ImageButton btnFavorite,
+      @NonNull ImageView ivDogImage, @NonNull TextView tvBreed) {
     this.rootView = rootView;
+    this.btnFavorite = btnFavorite;
     this.ivDogImage = ivDogImage;
+    this.tvBreed = tvBreed;
   }
 
   @Override
@@ -54,13 +65,25 @@ public final class ItemDogImageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnFavorite;
+      ImageButton btnFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (btnFavorite == null) {
+        break missingId;
+      }
+
       id = R.id.ivDogImage;
       ImageView ivDogImage = ViewBindings.findChildViewById(rootView, id);
       if (ivDogImage == null) {
         break missingId;
       }
 
-      return new ItemDogImageBinding((MaterialCardView) rootView, ivDogImage);
+      id = R.id.tvBreed;
+      TextView tvBreed = ViewBindings.findChildViewById(rootView, id);
+      if (tvBreed == null) {
+        break missingId;
+      }
+
+      return new ItemDogImageBinding((MaterialCardView) rootView, btnFavorite, ivDogImage, tvBreed);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

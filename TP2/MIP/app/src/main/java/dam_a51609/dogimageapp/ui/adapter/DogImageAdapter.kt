@@ -9,14 +9,29 @@ import com.bumptech.glide.Glide
 import dam_a51609.dogimageapp.data.model.ImageItem
 import dam_a51609.dogimageapp.databinding.ItemDogImageBinding
 
-class DogImageAdapter : ListAdapter<ImageItem, DogImageAdapter.DogViewHolder>(DiffCallback) {
+class DogImageAdapter(
+    private val onItemClick: (ImageItem) -> Unit,
+    private val onFavoriteClick: (ImageItem) -> Unit
+) : ListAdapter<ImageItem, DogImageAdapter.DogViewHolder>(DiffCallback) {
 
-    class DogViewHolder(private val binding: ItemDogImageBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class DogViewHolder(private val binding: ItemDogImageBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ImageItem) {
             Glide.with(binding.root.context)
                 .load(item.url)
                 .centerCrop()
+                .placeholder(android.R.drawable.progress_horizontal)
+                .error(android.R.drawable.stat_notify_error)
                 .into(binding.ivDogImage)
+
+            binding.btnFavorite.setImageResource(
+                if (item.isFavorite) android.R.drawable.btn_star_big_on
+                else android.R.drawable.btn_star_big_off
+            )
+
+            binding.tvBreed.text = item.breed
+
+            binding.root.setOnClickListener { onItemClick(item) }
+            binding.btnFavorite.setOnClickListener { onFavoriteClick(item) }
         }
     }
 

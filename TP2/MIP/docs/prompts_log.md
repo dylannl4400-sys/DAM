@@ -59,3 +59,43 @@ Continue
 
 Result:
 AI verified the implementation, fixed a dependency error in `MainActivity.kt`, marked all tasks as completed, and generated a high-fidelity mockup of the final app UI.
+
+## Prompt 7
+Goal:
+Build, Deploy, and Run verification (Section 3.9)
+
+Prompt:
+3.9 Build, Deploy, and Run Using AntiGravity... Focus on manual verification according to the assignment.
+
+Result:
+AI resolved environment conflicts (Java 25 vs AGP 8.2), fixed resource errors, and successfully built, deployed, and executed the app using the integrated AntiGravity workflow. Verification via logcat confirmed successful API retrieval and launch.
+
+## Prompt 8
+Goal:
+Plan and implement app extensions
+
+Prompt:
+Add the extensions defined in docs/09_extensions.md... Use in-memory storage... main list toggle UI.
+
+Result:
+AI created a comprehensive implementation plan for the 6 extensions (Details Screen, Favorites, Caching, Offline Support). User confirmed in-memory storage and main-list favorite icons. AI updated task list and is proceeding with implementation.
+
+## Prompt 9
+Goal:
+Implementation of Extensions (Features 1-6)
+
+Prompt:
+Continue (following confirmation of in-memory/main-list toggles)
+
+Result:
+AI implemented Details Screen (Activity + Navigation), FIFO Favorites (max 5) with star icons, In-memory Cache (max 50) in Repository, and Offline Support with cache fallback. All features were verified via a final integrated build (BUILD SUCCESSFUL).
+
+## Prompt 11
+Goal:
+MIP-2 3.3.1 - Metadata Extraction (Dog Breed)
+
+Prompt:
+Proceed with implementation of the MIP-2 requirement for image metadata (3.3.1)... Extend ImageItem... Format breed names... Display in Main and Details screens.
+
+Result:
+AI extended the data model with a non-null reed field, implemented URL-based extraction and formatting in the repository (e.g., "hound-plott" -> "Hound Plott"), and updated both MainActivity (RecyclerView) and DetailsActivity layouts and binding to display the metadata. Verified via an integrated build and successful deployment.

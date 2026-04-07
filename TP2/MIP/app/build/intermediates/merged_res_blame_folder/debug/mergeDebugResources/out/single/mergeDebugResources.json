@@ -1,18 +1,30 @@
 [
     {
-        "merged": "dam_a51609.dogimageapp-debug-39:/layout_activity_main.xml.flat",
-        "source": "dam_a51609.dogimageapp-main-41:/layout/activity_main.xml"
+        "merged": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-debug-39:\\xml_full_backup_content.xml.flat",
+        "source": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-main-41:\\xml\\full_backup_content.xml"
     },
     {
-        "merged": "dam_a51609.dogimageapp-debug-39:/xml_full_backup_content.xml.flat",
-        "source": "dam_a51609.dogimageapp-main-41:/xml/full_backup_content.xml"
+        "merged": "dam_a51609.dogimageapp-debug-39:/layout_activity_details.xml.flat",
+        "source": "dam_a51609.dogimageapp-main-41:/layout/activity_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-debug-39:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-main-41:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "dam_a51609.dogimageapp-debug-39:/layout_item_dog_image.xml.flat",
         "source": "dam_a51609.dogimageapp-main-41:/layout/item_dog_image.xml"
     },
     {
-        "merged": "dam_a51609.dogimageapp-debug-39:/xml_data_extraction_rules.xml.flat",
-        "source": "dam_a51609.dogimageapp-main-41:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-debug-39:\\layout_activity_details.xml.flat",
+        "source": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-main-41:\\layout\\activity_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-debug-39:\\layout_item_dog_image.xml.flat",
+        "source": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-main-41:\\layout\\item_dog_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-debug-39:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dylan\\.gradle\\daemon\\8.9\\dam_a51609.dogimageapp-main-41:\\layout\\activity_main.xml"
     }
 ]

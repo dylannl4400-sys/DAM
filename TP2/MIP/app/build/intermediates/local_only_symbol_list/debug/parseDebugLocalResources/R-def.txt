@@ -5,11 +5,17 @@ color purple_500
 color purple_700
 color teal_200
 color white
+id btnFavorite
+id detailedImageView
+id fabBack
 id fabRefresh
 id ivDogImage
 id progressBar
 id recyclerView
 id toolbar
+id tvBreed
+id tvBreedDetail
+layout activity_details
 layout activity_main
 layout item_dog_image
 string app_name

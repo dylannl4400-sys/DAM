@@ -12,10 +12,13 @@ import kotlinx.coroutines.launch
 class DogViewModel(private val repository: DogRepository) : ViewModel() {
 
     private val _dogImages = MutableLiveData<List<ImageItem>>(emptyList())
-    val dogImages: LiveData<List<ImageItem>> = _dogImages
+    val dogImages: LiveData<List<ImageItem>> get() = _dogImages
 
-    private val _isLoading = MutableLiveData<Boolean>(false)
-    val isLoading: LiveData<Boolean> = _isLoading
+    private val _favorites = MutableLiveData<List<ImageItem>>(emptyList())
+    val favorites: LiveData<List<ImageItem>> get() = _favorites
+
+    private val _isLoading = MutableLiveData<Boolean>()
+    val isLoading: LiveData<Boolean> get() = _isLoading
 
     private val _error = MutableLiveData<String?>(null)
     val error: LiveData<String?> = _error
@@ -37,14 +40,53 @@ class DogViewModel(private val repository: DogRepository) : ViewModel() {
                     }
                 } else {
                     Log.e("DogViewModel", "Fetch error: ${response.code()}")
-                    _error.value = "Error: ${response.code()}"
+                    handleOfflineScenario("Error: ${response.code()}")
                 }
             } catch (e: Exception) {
                 Log.e("DogViewModel", "Fetch exception: ${e.localizedMessage}")
-                _error.value = "Exception: ${e.localizedMessage}"
+                handleOfflineScenario("Exception: ${e.localizedMessage}")
             } finally {
                 _isLoading.value = false
             }
         }
+    }
+
+    private fun handleOfflineScenario(errorMessage: String) {
+        val cached = repository.cache
+        if (cached.isNotEmpty()) {
+            _error.value = "Offline / Error. Loading from cache..."
+            val currentList = _dogImages.value.orEmpty().toMutableList()
+            // Add unique ones from cache that aren't already displayed
+            cached.forEach { item ->
+                if (!currentList.contains(item)) {
+                    currentList.add(0, item)
+                }
+            }
+            _dogImages.value = currentList
+        } else {
+            _error.value = errorMessage
+        }
+    }
+
+    fun toggleFavorite(item: ImageItem) {
+        val currentFavorites = _favorites.value.orEmpty().toMutableList()
+        val existingIndex = currentFavorites.indexOfFirst { it.url == item.url }
+
+        if (existingIndex != -1) {
+            currentFavorites.removeAt(existingIndex)
+        } else {
+            if (currentFavorites.size >= 5) {
+                currentFavorites.removeAt(0)
+            }
+            currentFavorites.add(item.copy(isFavorite = true))
+        }
+        _favorites.value = currentFavorites
+
+        // Also update the main list to reflect the new state
+        val currentImages = _dogImages.value.orEmpty().map { dog ->
+            val isFav = currentFavorites.any { it.url == dog.url }
+            dog.copy(isFavorite = isFav)
+        }
+        _dogImages.value = currentImages
     }
 }
