@@ -22,13 +22,13 @@ The application integrates with the **Dog API** (Public REST API):
 Please include the following screenshots in this section to demonstrate the core functionality:
 
 1.  **Main Image Stream (main_screen.png):**
-    - Show the main scrollable list of cards.
+    ![Main Screen](screenshots/main.png)
+    - Shows the main scrollable list of cards.
     - Captures: Breed names (metadata) below each image and the star icon for favoriting.
 2.  **Detailed View (details_screen.png):**
-    - Show the high-quality full-screen view accessed via card tap.
+    ![Detailed View](screenshots/details.png)
+    - Shows the high-quality full-screen view accessed via card tap.
     - Captures: The breed name at the top of the screen and the navigation back button.
-3.  **Loading & Feedback (`ui_states.png`):**
-    - Show the progress bar during an active fetch or a toast message for errors.
 
 ## 🚀 Running the Project
 
