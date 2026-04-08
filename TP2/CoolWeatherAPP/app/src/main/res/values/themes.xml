@@ -22,16 +22,16 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <style name="Theme.Day" parent="Theme.CoolWeatherApp">
+    <style name="Theme.Day" parent="Base.Theme.CoolWeatherAPP">
         <item name="android:windowBackground">@drawable/sunny_bg</item>
     </style>
-    <style name="Theme.Day.Land" parent="Theme.CoolWeatherApp">
+    <style name="Theme.Day.Land" parent="Base.Theme.CoolWeatherAPP">
         <item name="android:windowBackground">@drawable/sunny_bg_land</item>
     </style>
-    <style name="Theme.Night" parent="Theme.CoolWeatherApp">
+    <style name="Theme.Night" parent="Base.Theme.CoolWeatherAPP">
         <item name="android:windowBackground">@drawable/night_bg</item>
     </style>
-    <style name="Theme.Night.Land" parent="Theme.CoolWeatherApp">
+    <style name="Theme.Night.Land" parent="Base.Theme.CoolWeatherAPP">
         <item name="android:windowBackground">@drawable/night_bg_land</item>
     </style>
 </resources>
