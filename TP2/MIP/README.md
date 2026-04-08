@@ -19,16 +19,14 @@ The application integrates with the **Dog API** (Public REST API):
 
 ## 📸 Screenshots
 
-Please include the following screenshots in this section to demonstrate the core functionality:
-
-1.  **Main Image Stream (main_screen.png):**
-    ![Main Screen](screenshots/main_screen.png)
+1.  **Main Image Stream:**
     - Shows the main scrollable list of cards.
     - Captures: Breed names (metadata) below each image and the star icon for favoriting.
-2.  **Detailed View (details_screen.png):**
-    ![Detailed View](screenshots/details_screen.png)
+    ![Main Screen](screenshots/main_screen.png)
+2.  **Detailed View:**
     - Shows the high-quality full-screen view accessed via card tap.
     - Captures: The breed name at the top of the screen and the navigation back button.
+    ![Detailed View](screenshots/details_screen.png)
 
 ## 🚀 Running the Project
 
