@@ -47,7 +47,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("com.google.code.gson:gson:2.8.9")
     
-    // Lifecycle components
+    
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.3")
     implementation("androidx.activity:activity-ktx:1.9.0")

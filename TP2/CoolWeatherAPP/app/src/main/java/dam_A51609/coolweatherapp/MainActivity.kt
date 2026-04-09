@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Observer Pattern: Observe elements that interact with the Android Context
+        
         viewModel.weatherIconRes.observe(this) { resId ->
-            binding.weatherIcon.setImageResource(R.drawable.fog) // Mock loading default
+            binding.weatherIcon.setImageResource(R.drawable.fog) 
             val drawable = this.getDrawable(resId)
             binding.weatherIcon.setImageDrawable(drawable)
         }

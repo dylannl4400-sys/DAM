@@ -1,7 +1,5 @@
 package dam_A51609.coolweatherapp
 
-
-
 data class WeatherData(
     var latitude: String,
     var longitude: String,
@@ -9,6 +7,7 @@ data class WeatherData(
     var current_weather: CurrentWeather,
     var hourly: Hourly
 )
+
 data class CurrentWeather (
     var temperature : Float,
     var windspeed : Float,
@@ -23,3 +22,5 @@ data class Hourly (
     var weathercode: ArrayList<Int>,
     var pressure_msl:ArrayList<Double>
 )
+
+data class WeatherCodeInfo(val code: Int, val description: String, val image: String)

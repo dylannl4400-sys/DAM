@@ -11,11 +11,11 @@ import kotlin.concurrent.thread
 
 class WeatherViewModel(application: Application) : AndroidViewModel(application) {
 
-    // Inputs (Two-way DataBinding support)
+    
     val inputLatitude = MutableLiveData<String>("38.076")
     val inputLongitude = MutableLiveData<String>("-9.12")
 
-    // Outputs
+    
     private val _temperature = MutableLiveData<String>("--")
     val temperature: LiveData<String> = _temperature
 
