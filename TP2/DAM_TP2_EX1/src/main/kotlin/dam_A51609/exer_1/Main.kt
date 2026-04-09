@@ -1,9 +1,4 @@
-package dam_A51609
-
-import org.example.alinea_1.Event
-import org.example.alinea_1.filterByUser
-import org.example.alinea_1.processEvents
-import org.example.alinea_1.totalSpent
+package org.example.dam_A51609.exer_1
 
 fun main(){
 

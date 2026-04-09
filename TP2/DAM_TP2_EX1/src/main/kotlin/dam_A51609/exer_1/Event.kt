@@ -1,6 +1,6 @@
-package dam_A51609
+package org.example.dam_A51609.exer_1
 
-import dam_A51609.Event.Purchase
+import org.example.dam_A51609.exer_1.Event.Purchase
 
 
 
