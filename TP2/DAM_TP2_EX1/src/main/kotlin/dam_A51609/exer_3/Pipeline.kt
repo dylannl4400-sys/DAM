@@ -20,7 +20,7 @@ class Pipeline {
         }
     }
 
-    // Challenge: compose two existing stages into one
+    
     fun compose(firstName: String, secondName: String) {
         val first = stages.find { it.first == firstName }?.second
             ?: throw IllegalArgumentException("Stage '$firstName' not found")
@@ -33,7 +33,7 @@ class Pipeline {
         addStage("$firstName + $secondName", composed)
     }
 
-    // Challenge: fork into two independent pipelines
+
     fun fork(other: Pipeline, input: List<String>): Pair<List<String>, List<String>> {
         return Pair(this.execute(input), other.execute(input))
     }
