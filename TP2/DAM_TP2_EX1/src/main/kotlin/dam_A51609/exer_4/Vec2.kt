@@ -2,7 +2,7 @@ package org.example.dam_A51609.exer_4
 
 import kotlin.math.sqrt
 
-data class Vec2(val x: Double, val y: Double){
+data class Vec2(val x: Double, val y: Double): Comparable<Vec2>{
 
     operator fun plus(other: Vec2): Vec2{
 
@@ -24,7 +24,7 @@ data class Vec2(val x: Double, val y: Double){
         return Vec2(-x, -y)
     }
 
-    operator fun compareTo(other: Vec2): Int{
+    override operator fun compareTo(other: Vec2): Int{
         return this.magnitude().compareTo(other.magnitude())
     }
 
