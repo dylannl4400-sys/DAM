@@ -20,7 +20,7 @@ class Pipeline {
         }
     }
 
-    
+
     fun compose(firstName: String, secondName: String) {
         val first = stages.find { it.first == firstName }?.second
             ?: throw IllegalArgumentException("Stage '$firstName' not found")
