@@ -1,9 +1,10 @@
-# Screens
+### Compose Screens
 
-## Main Screen
+Main Screen (Compose)
+- LazyColumn with dog images
+- Refresh action
+- Favorite toggle
 
-Components:
-- Toolbar
-- RecyclerView (list of images)
-- Refresh button
-- ProgressBar (loading indicator)
+Details Screen (Compose)
+- Full image
+- Breed information

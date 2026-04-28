@@ -1,3 +1,5 @@
-# Navigation
+### app-xml
+MainActivity → DetailsActivity
 
-MainActivity (only screen)
+### app-compose
+MainScreen → DetailsScreen (Composable navigation)

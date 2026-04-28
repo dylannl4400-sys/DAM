@@ -1,12 +1,19 @@
-# Architecture
+## Modular Architecture (MIP-3)
 
-Architecture: MVVM
+The project is divided into three modules:
 
-Layers:
-UI (Activity)
-↓
-ViewModel
-↓
-Repository
-↓
-API Service
+- :core  
+  Contains:
+  - Data models (ImageItem)
+  - API service (DogApiService)
+  - Repository (DogRepository)
+  - Business logic (breed extraction, cache, favorites)
+
+- :app-xml  
+  - XML-based UI (MainActivity, RecyclerView, DetailsActivity)
+  - Consumes :core
+
+- :app-compose  
+  - Jetpack Compose UI
+  - Uses composables and state
+  - Consumes :core
