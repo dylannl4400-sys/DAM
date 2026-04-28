@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dog Image App</string>
+    <string name="refresh_description">Fetch new dog image</string>
+    <string name="dog_image_description">Dog Image</string>
+</resources>

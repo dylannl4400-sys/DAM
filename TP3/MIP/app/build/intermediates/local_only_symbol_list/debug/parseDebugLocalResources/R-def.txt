@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_500
+color purple_700
+color teal_200
+color white
+id btnFavorite
+id detailedImageView
+id fabBack
+id fabRefresh
+id ivDogImage
+id progressBar
+id recyclerView
+id toolbar
+id tvBreed
+id tvBreedDetail
+layout activity_details
+layout activity_main
+layout item_dog_image
+string app_name
+string dog_image_description
+string refresh_description
+style Theme.DogImageApp
+xml data_extraction_rules
+xml full_backup_content
