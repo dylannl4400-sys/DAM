@@ -1,14 +1,15 @@
 package dam_a51609.dogimageapp.compose.ui.screens
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.scaleIn
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -45,12 +46,25 @@ fun DogListScreen(
                     modifier = Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(8.dp)
                 ) {
-                    items(uiState.dogImages) { dog ->
-                        DogCard(
-                            item = dog,
-                            onItemClick = { onNavigateToDetail(it) },
-                            onFavoriteClick = { viewModel.toggleFavorite(it) }
-                        )
+                    items(
+                        items = uiState.dogImages,
+                        key = { it.url }
+                    ) { dog ->
+                        var isVisible by remember { mutableStateOf(false) }
+                        LaunchedEffect(Unit) {
+                            isVisible = true
+                        }
+
+                        AnimatedVisibility(
+                            visible = isVisible,
+                            enter = fadeIn() + scaleIn(initialScale = 0.8f)
+                        ) {
+                            DogCard(
+                                item = dog,
+                                onItemClick = { onNavigateToDetail(it) },
+                                onFavoriteClick = { viewModel.toggleFavorite(it) }
+                            )
+                        }
                     }
                 }
             }

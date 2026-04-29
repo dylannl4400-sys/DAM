@@ -123,3 +123,22 @@ Implementation Plan:
 2. Return error state to ViewModel
 3. Observe error in Activity
 4. Show message
+
+---
+
+## Feature 7: Entrance Animations (Compose Exclusive)
+
+Description:
+Add smooth entrance animations for items in the list. This feature is exclusive to the Jetpack Compose version.
+
+Tasks:
+- Use AnimatedVisibility in DogListScreen
+- Implement fade and scale entrance for each DogCard
+
+UI Changes:
+- Items appear with a smooth animation when loaded or added to the list.
+
+Implementation Plan:
+1. Wrap DogCard in AnimatedVisibility
+2. Trigger visibility state when item enters the screen
+3. Use fadeIn() + scaleIn() transitions
