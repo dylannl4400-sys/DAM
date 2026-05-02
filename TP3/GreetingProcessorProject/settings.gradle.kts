@@ -5,3 +5,6 @@ rootProject.name = "GreetingProcessorProject"
 include("annotations")
 include("processor")
 include("app")
+include("annotations2")
+include("processor2")
+include("app2")
