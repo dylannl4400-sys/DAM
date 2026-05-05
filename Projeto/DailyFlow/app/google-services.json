@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1000285950274",
+    "project_id": "dailyflow-9118d",
+    "storage_bucket": "dailyflow-9118d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000285950274:android:90da574f7b98ee2375f8db",
+        "android_client_info": {
+          "package_name": "com.dylanloyola.dailyflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBne2zB9p9WHTF2f2V-Wu9b9L7QCfbg6g8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

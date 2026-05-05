@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DailyFlow - Edit Routine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f3faff",
+                    "on-primary-container": "#002c4f",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#dbf1fe",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#e6f6ff",
+                    "on-tertiary-fixed-variant": "#7b008f",
+                    "tertiary-fixed": "#ffd6fe",
+                    "on-secondary-fixed": "#002204",
+                    "primary-fixed-dim": "#9ecaff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#005313",
+                    "error": "#ba1a1a",
+                    "background": "#f3faff",
+                    "on-tertiary-container": "#4e005b",
+                    "on-secondary-container": "#00731e",
+                    "tertiary-container": "#d661e7",
+                    "surface-container-highest": "#cfe6f2",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#bfc7d4",
+                    "surface-container-high": "#d5ecf8",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#001d36",
+                    "secondary-fixed": "#94f990",
+                    "secondary-fixed-dim": "#78dc77",
+                    "on-surface-variant": "#404752",
+                    "inverse-on-surface": "#dff4ff",
+                    "on-primary-fixed-variant": "#00497d",
+                    "primary-container": "#2196f3",
+                    "surface-tint": "#0061a4",
+                    "on-surface": "#071e27",
+                    "surface-dim": "#c7dde9",
+                    "primary": "#0061a4",
+                    "primary-fixed": "#d1e4ff",
+                    "outline": "#707883",
+                    "on-background": "#071e27",
+                    "tertiary-fixed-dim": "#f9abff",
+                    "secondary-container": "#91f78e",
+                    "secondary": "#006e1c",
+                    "surface": "#f3faff",
+                    "on-tertiary-fixed": "#35003f",
+                    "inverse-primary": "#9ecaff",
+                    "tertiary": "#9a25ae",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#1e333c",
+                    "surface-variant": "#cfe6f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "inset-squish": "12px 16px",
+                    "stack-sm": "4px",
+                    "gutter": "16px",
+                    "inset-square": "16px",
+                    "base": "8px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "24px",
+                    "stack-md": "12px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "label-lg": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f3faff;
+            font-family: 'Inter', sans-serif;
+        }
+        .form-input-focus:focus {
+            outline: none;
+            border-color: #0061a4;
+            box-shadow: 0 0 0 2px rgba(0, 97, 164, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- Top AppBar -->
+<header class="bg-background dark:bg-background w-full top-0 z-40 sticky">
+<div class="flex justify-between items-center px-margin-mobile py-base w-full">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">DailyFlow</h1>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border-2 border-primary-fixed">
+<img alt="User profile photo" class="w-full h-full object-cover" data-alt="A high-quality professional headshot of a smiling young woman with soft, natural lighting. The background is a clean, out-of-focus interior with a blue and white color palette, maintaining the minimalist and calm aesthetic of the UI. Her expression is approachable and encouraging, reflecting the gentle brand personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALiZn9ziBMY_wwMfqmSvsnYBcihQjgReTYmnqb6R3BNFWaEmU1UfnSJmURFU1aRfON61CUoz6sqHYYdbUiK_fkLgTvsr9Mrpo-FrwXdNjtNgFRN6amZqtyI4TOlb22HlxmaK8Q7bf0VKBEnCfehurYGN09yqdp7KKGSMAOh2Xm656QiaorOGklE_b1xZbkm-K_PWm_NYLTZ5sqnMRue76npvqUcxEv_uUyKN997ADs0JXMZRRv3ex3Jdr5_kcW6y7_Te_ZLiaZ60x_"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow px-margin-mobile pt-stack-lg pb-32">
+<div class="max-w-md mx-auto">
+<header class="mb-stack-lg">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-stack-sm">Edit Routine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Customize your daily ritual for a better flow.</p>
+</header>
+<form class="space-y-stack-lg">
+<!-- Routine Name Field -->
+<div class="space-y-base">
+<label class="font-label-lg text-label-lg text-on-surface-variant block ml-1" for="routine-name">Routine Name</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-4 font-body-lg text-body-lg text-on-surface form-input-focus transition-all duration-200" id="routine-name" placeholder="e.g., Deep Work, Evening Wind Down" type="text" value="Morning Mindfulness"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="edit">edit</span>
+</div>
+</div>
+<!-- Time Period Selector -->
+<div class="space-y-base">
+<label class="font-label-lg text-label-lg text-on-surface-variant block ml-1">Time Period</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-primary-container text-on-primary-container shadow-sm border-2 border-primary transition-all duration-300" type="button">
+<span class="material-symbols-outlined mb-1" data-icon="light_mode">light_mode</span>
+<span class="font-label-sm text-label-sm">Morning</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-low text-on-surface-variant border border-outline-variant hover:bg-surface-container-high transition-all duration-200" type="button">
+<span class="material-symbols-outlined mb-1" data-icon="wb_sunny">wb_sunny</span>
+<span class="font-label-sm text-label-sm">Afternoon</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-low text-on-surface-variant border border-outline-variant hover:bg-surface-container-high transition-all duration-200" type="button">
+<span class="material-symbols-outlined mb-1" data-icon="bedtime">bedtime</span>
+<span class="font-label-sm text-label-sm">Night</span>
+</button>
+</div>
+</div>
+<!-- Repeat Days Multi-select -->
+<div class="space-y-base">
+<label class="font-label-lg text-label-lg text-on-surface-variant block ml-1">Repeat Days</label>
+<div class="flex flex-wrap gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-on-primary font-label-lg transition-all duration-200" type="button">M</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-on-primary font-label-lg transition-all duration-200" type="button">T</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-on-primary font-label-lg transition-all duration-200" type="button">W</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-on-primary font-label-lg transition-all duration-200" type="button">T</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-on-primary font-label-lg transition-all duration-200" type="button">F</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface-variant border border-outline-variant font-label-lg hover:border-primary transition-all duration-200" type="button">S</button>
+<button class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface-variant border border-outline-variant font-label-lg hover:border-primary transition-all duration-200" type="button">S</button>
+</div>
+</div>
+<!-- Decorative Card / Insight -->
+<div class="bg-tertiary-fixed text-on-tertiary-fixed-variant p-4 rounded-2xl flex items-start gap-4 border border-tertiary-container/20">
+<div class="bg-white/40 p-2 rounded-xl">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold">Pro Tip</p>
+<p class="font-body-md text-body-md opacity-90">Morning routines are 3x more likely to stick when completed before 9:00 AM.</p>
+</div>
+</div>
+</form>
+</div>
+</main>
+<!-- Save Action Area -->
+<div class="fixed bottom-0 left-0 w-full p-margin-mobile bg-gradient-to-t from-background via-background to-transparent pointer-events-none">
+<div class="max-w-md mx-auto pointer-events-auto">
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-label-lg text-label-lg shadow-lg hover:opacity-90 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+                Save Routine
+            </button>
+</div>
+</div>
+<!-- Navigation suppressed for task-focused Edit screen -->
+</body></html>

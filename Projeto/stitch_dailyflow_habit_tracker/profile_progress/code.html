@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DailyFlow - Profile &amp; Stats</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f3faff",
+                        "on-primary-container": "#002c4f",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#dbf1fe",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#e6f6ff",
+                        "on-tertiary-fixed-variant": "#7b008f",
+                        "tertiary-fixed": "#ffd6fe",
+                        "on-secondary-fixed": "#002204",
+                        "primary-fixed-dim": "#9ecaff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005313",
+                        "error": "#ba1a1a",
+                        "background": "#f3faff",
+                        "on-tertiary-container": "#4e005b",
+                        "on-secondary-container": "#00731e",
+                        "tertiary-container": "#d661e7",
+                        "surface-container-highest": "#cfe6f2",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bfc7d4",
+                        "surface-container-high": "#d5ecf8",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#001d36",
+                        "secondary-fixed": "#94f990",
+                        "secondary-fixed-dim": "#78dc77",
+                        "on-surface-variant": "#404752",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-primary-fixed-variant": "#00497d",
+                        "primary-container": "#2196f3",
+                        "surface-tint": "#0061a4",
+                        "on-surface": "#071e27",
+                        "surface-dim": "#c7dde9",
+                        "primary": "#0061a4",
+                        "primary-fixed": "#d1e4ff",
+                        "outline": "#707883",
+                        "on-background": "#071e27",
+                        "tertiary-fixed-dim": "#f9abff",
+                        "secondary-container": "#91f78e",
+                        "secondary": "#006e1c",
+                        "surface": "#f3faff",
+                        "on-tertiary-fixed": "#35003f",
+                        "inverse-primary": "#9ecaff",
+                        "tertiary": "#9a25ae",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#1e333c",
+                        "surface-variant": "#cfe6f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "inset-squish": "12px 16px",
+                        "stack-sm": "4px",
+                        "gutter": "16px",
+                        "inset-square": "16px",
+                        "base": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "24px",
+                        "stack-md": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 12px rgba(0, 97, 164, 0.05);
+        }
+        .streak-glow {
+            box-shadow: 0 0 15px rgba(154, 37, 174, 0.25);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-background w-full top-0 z-50 flex justify-between items-center px-margin-mobile py-base w-full sticky">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary" data-icon="settings">settings</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">DailyFlow</h1>
+<div class="hover:opacity-80 transition-opacity active:scale-95 transition-transform duration-200">
+<img alt="User profile photo" class="w-10 h-10 rounded-full border-2 border-surface-container-highest" data-alt="A professional headshot of a smiling person in a bright, airy studio with soft, natural lighting. The background is a clean, neutral tone that matches the minimalist, calm aesthetic of a high-end health and wellness mobile application. The overall mood is peaceful and encouraging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkuM-msWbXAuxvqWlN2zU9fG1wCkFW8pt6uMJCfjSUz6rC4bjsS8EqkhJDZ7Dp0XzxWsaPJxJBxhg1R97mz6MlPhVYCv-bT6I_VH9OvOzNdIENtiG_yVpBqsynZ_4fKOQv6y5lkNPwEovyWYIwoTnKSN-2apYOF_XqL0-MoIKyLGSpAnLpjuXOpmLLD4rL30fW65hwyshmONzreGFgZd4PYhvSotw41paRzgelPxCA4K52uMaXx455ny1NO51OPUqToJfBPSBqcHm9"/>
+</div>
+</header>
+<main class="px-margin-mobile pt-stack-lg space-y-stack-lg">
+<!-- Profile Hero Section -->
+<section class="flex flex-col items-center text-center space-y-stack-sm">
+<div class="relative">
+<div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white soft-shadow">
+<img alt="Alex Rivera" class="w-full h-full object-cover" data-alt="Close up portrait of a young adult with a serene expression, looking directly at the camera with gentle confidence. The lighting is soft and high-key, emphasizing pristine skin tones and a clean, minimalist aesthetic that feels restorative and modern. The background is a soft blue-tinted white gradient." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EU4AKbazXCCR4K-jfpJB4EM6lTvVnPxqv2Lw1bJy1_JTsqJ9hZJjMzNi0xowl7Z_NUyDe926e0ezEx3vU75Ah_Xvaj8g7Jp1wf6Jo_2dBdTpy1DhdTut6dq0wQ70JYa_sxVkswIf8Yfg0XSToBnVk6oglrFDttBUnnoPA2FD3LkD9cLg3f5X72Mv-tQtrDAvczuFxxo7MOaRwbQm6d-0IHcgDoCX8YTDc-zpRbjlQEbCAMq22Z471oqYLhdvK4smxJjp_PkUX2aL"/>
+</div>
+<!-- Streak Badge -->
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-tertiary text-on-tertiary px-4 py-1 rounded-full flex items-center gap-1 streak-glow">
+<span class="material-symbols-outlined text-[18px]" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-lg text-label-lg">12 Day Streak</span>
+</div>
+</div>
+<div class="pt-4">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Alex Rivera</h2>
+<p class="text-on-surface-variant font-body-md italic opacity-80">Finding my flow since June 2023</p>
+</div>
+</section>
+<!-- Stats Overview Cards -->
+<section class="grid grid-cols-2 gap-gutter">
+<div class="bg-surface-container-low p-inset-square rounded-xl soft-shadow border border-primary/5">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="task_alt">task_alt</span>
+<div class="font-headline-sm text-headline-sm text-primary">148</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Completed</div>
+</div>
+<div class="bg-surface-container-low p-inset-square rounded-xl soft-shadow border border-primary/5">
+<span class="material-symbols-outlined text-tertiary mb-2" data-icon="auto_awesome">auto_awesome</span>
+<div class="font-headline-sm text-headline-sm text-tertiary">92%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Consistency</div>
+</div>
+</section>
+<!-- Weekly Activity Section -->
+<section class="space-y-stack-md">
+<div class="flex justify-between items-end">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Weekly Activity</h3>
+<span class="font-label-sm text-label-sm text-primary">Last 7 Days</span>
+</div>
+<div class="bg-surface-container-lowest p-inset-square rounded-xl border border-primary/10 soft-shadow">
+<div class="flex justify-between items-end h-32 gap-2">
+<!-- Monday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 60%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">6</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<!-- Tuesday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 85%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">9</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Wednesday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 45%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">4</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+</div>
+<!-- Thursday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-primary-container rounded-t-full relative group" style="height: 100%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">10</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">T</span>
+</div>
+<!-- Friday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 70%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">7</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">F</span>
+</div>
+<!-- Saturday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 30%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">3</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+<!-- Sunday -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-secondary-container rounded-t-full relative group" style="height: 50%;">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-on-surface text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">5</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Bento Grid -->
+<section class="space-y-stack-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Daily Flow Insights</h3>
+<div class="grid grid-cols-2 grid-rows-2 gap-4">
+<div class="col-span-2 bg-gradient-to-br from-surface-container-high to-surface-container p-inset-square rounded-2xl border border-primary/5 flex items-center justify-between">
+<div class="space-y-1">
+<div class="font-label-sm text-label-sm text-primary uppercase">Best Habit</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Morning Meditation</div>
+<div class="text-on-surface-variant text-body-md">24 day peak streak</div>
+</div>
+<div class="bg-white/50 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="self_improvement">self_improvement</span>
+</div>
+</div>
+<div class="bg-tertiary-fixed p-inset-square rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant" data-icon="wb_sunny">wb_sunny</span>
+<div class="mt-4">
+<div class="font-headline-sm text-headline-sm text-on-tertiary-fixed">Early Bird</div>
+<div class="font-label-sm text-label-sm text-on-tertiary-fixed-variant opacity-70">80% morning success</div>
+</div>
+</div>
+<div class="bg-secondary-fixed p-inset-square rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant" data-icon="bolt">bolt</span>
+<div class="mt-4">
+<div class="font-headline-sm text-headline-sm text-on-secondary-fixed">Power User</div>
+<div class="font-label-sm text-label-sm text-on-secondary-fixed-variant opacity-70">Top 5% this month</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container-lowest shadow-sm rounded-t-xl">
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-sm text-label-sm">Today</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-label-sm text-label-sm">Routines</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90 duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="add_circle" style="font-size: 32px;">add_circle</span>
+<span class="font-label-sm text-label-sm">Add</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90 duration-300">
+<span class="material-symbols-outlined" data-icon="leaderboard">leaderboard</span>
+<span class="font-label-sm text-label-sm">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 active:scale-90 transition-all duration-300 ease-in-out">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</div>
+</nav>
+</body></html>
